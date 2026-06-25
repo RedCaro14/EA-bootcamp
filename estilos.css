@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --morado: #7b2ff7;
+    --rosa: #f72585;
+    --turquesa: #00b8a9;
+    --gris-oscuro: #222;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: var(--gris-oscuro);
+    margin: 0;
+}
+
+.banda {
+    background: linear-gradient(135deg, var(--morado), var(--rosa));
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.banda h1 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover,
+nav a.activo {
+    border-bottom: 2px solid #ffffff;
+}
+
+.contenedor {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    display: inline-block;
+    color: var(--turquesa);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--rosa);
+    text-decoration: underline;
+}
+
+#contacto h2 {
+    margin-top: 0;
+    color: var(--morado);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--turquesa);
+}
+
+button {
+    margin-top: 18px;
+    padding: 12px;
+    background: linear-gradient(135deg, var(--morado), var(--rosa));
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
