@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -117,4 +119,30 @@ button {
 
 button:hover {
     opacity: 0.9;
+}
+
+.card {
+  font-family: 'Poppins', sans-serif;
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid lightgray;
+  text-align: center;
+}
+
+.card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.card p {
+  color: gray;
+}
+
+.card button {
+  background-color: #4361ee;
+  color: white;
+  border: none;
+  padding: 8px 20px;
 }
